@@ -1,0 +1,75 @@
+Part 1 JSON:
+[
+    {
+
+        "Name":"Menu A",
+        "Appertizer":"Tomato Soup",
+        "Main":"Roasted Beef",
+        "Dessert":"Chocolate Cake",
+        "Price":50
+    },
+    {
+        "Name":"Menu B",
+        "Appertizer":"Goat Cheese Dip",
+        "Main":"Homemade Pasta with Shrimp",
+        "Dessert":"Vanilla Ice Cream",
+        "Price":40
+    },
+    {
+
+        "Name":"Menu C",
+        "Appertizer":"Garden Salad",
+        "Main":"Butter Chicken with Rice",
+        "Dessert":"Price Pudding",
+        "Price":45
+    }
+]
+
+
+
+
+Part 2 JavaScript Object:
+
+
+var menus = [
+    {
+        name:"Menu A",
+        appertizer:"Tomato Soup",
+        main:"Roasted Beef",
+        dessert:"Chocolate Cake",
+        price:50
+    },
+    {
+        name:"Menu B",
+        appertizer:"Goat Cheese Dip",
+        main:"Homemade Pasta with Shrimp",
+        dessert:"Vanilla Ice Cream",
+        price:40
+    },
+    {
+        name:"Menu C",
+        appertizer:"Garden Salad",
+        main:"Butter Chicken with Rice",
+        dessert:"Price Pudding",
+        price:45
+    }
+];
+
+
+function addPoints () {
+    var home3Point = document.getElementById('home-3-point-btn');
+    var home2Point = document.getElementById('home-2-point-btn');
+    var homeFree = document.getElementById('home-free-throw-btn');
+    var visitor3Point = document.getElementById('visitor-3-point-btn');
+    var visitor2Point = document.getElementById('visitor-2-point-btn');
+    var visitorFree = document.getElementById('visitor-free-throw-btn');
+
+
+
+    home3Point.onclick = homeScore + 3;
+    home2Point.onclick = homeScore + 2;
+    homeFree.onclick = homeScore + 1;
+    visitor3Point.onclick = visitorScore + 3;
+    visitor2Point.onclick = visitorScore + 2;
+    visitorFree.onclick = visitorScore + 1;
+}
